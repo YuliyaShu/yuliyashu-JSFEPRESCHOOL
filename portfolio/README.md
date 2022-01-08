@@ -1,1 +1,1 @@
-https://rolling-scopes-school.github.io/YULIYASHU-JSFEPRESCHOOL/portfolio/
+https://rolling-scopes-school.github.io/yuliyashu-JSFEPRESCHOOL/portfolio/
