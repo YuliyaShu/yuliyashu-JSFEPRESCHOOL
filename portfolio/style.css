@@ -83,6 +83,10 @@
     margin-block-start: 0px;
     margin-block-end: 0px;
   }
+
+  .hidden-header {
+    display: none;
+  }
   
   figure {
     margin-block-start: 0px;
