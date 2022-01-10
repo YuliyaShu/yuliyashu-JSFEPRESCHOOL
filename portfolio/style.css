@@ -283,7 +283,7 @@
       flex-direction: row;
       width: 500px;
       height: 330px;
-      margin-top: 160px;
+      margin-top: 250px;
       margin-left: 80px;
      }
 
@@ -490,10 +490,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items:center;
   align-content: center;
-  width: 100%;
+  width: 1400px;
   margin-bottom: 100px;
 }
 
@@ -596,7 +596,7 @@
     border: none;
     width: 450px;
     height: 445px;
-    margin-bottom: 150px;
+    margin-bottom: 135px;
   }
 
   .section-title-contacts {
@@ -770,7 +770,6 @@ ul.footer-list {
   justify-content: space-between;
   margin: 20px 0px 20px 0px;
   list-style-type: none;
-  width: 500px;
   justify-content: flex-start;
 }
 
