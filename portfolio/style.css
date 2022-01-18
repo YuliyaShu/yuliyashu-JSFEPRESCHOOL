@@ -60,6 +60,21 @@
     }
   }
 
+  @media (max-width: 767px) {
+    .section-media {
+      width: 100%;
+      
+    }
+  }
+
+  @media (max-width: 320px) {
+    .section-media {
+      width: 100%;
+      
+    }
+  }
+
+
   @media (max-width: 1440px) {
     .skills-items {
       justify-content: space-around;
@@ -105,6 +120,19 @@
     margin-inline-end: 0px;
     height: 560px;
   }
+
+  @media (max-width: 320px) {
+    figure {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    figure {
+      height: auto;
+    }
+  }
+  
   
 button {
   padding: 0px;
@@ -313,6 +341,24 @@ button {
       margin-left: 80px;
      }
 
+     @media (max-width: 320px) {
+      .hero-section {
+        flex-direction: column;
+        justify-content: flex-end;
+        width: auto;
+        
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-section {
+        flex-direction: column;
+        justify-content: flex-end;
+        width: auto;
+        
+      }
+    }
+
   .hero-title {
     position: relative;
     height: 120px;
@@ -371,6 +417,22 @@ button {
         line-height: 24px;
     }
   }
+
+  @media (max-width: 767px) {
+    .hero-text {
+      width: auto;
+      height: auto;
+    } 
+  }
+
+  @media (max-width: 320px) {
+    .hero-text {
+      width: auto;
+      height: auto;
+    } 
+  }
+
+  
   
 
   .hero-button {
@@ -392,7 +454,6 @@ button {
       justify-content: center;
       align-items: center;
       padding: 7px 73px;
-
       position: absolute;
       width: 219px;
       height: 54px;
@@ -401,6 +462,20 @@ button {
       border-radius: 0px;
   }
 }
+
+@media (max-width: 767px) {
+  .hero-button {
+    top: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-button {
+    top: auto;
+  }
+}
+
+
 
   .hero-button-text {
     position: relative;
@@ -445,6 +520,24 @@ button {
   }
 }
 
+@media (max-width: 767px) {
+  .section-lines {
+    margin-bottom: 36px;
+    margin-top: 80px;
+    width: 100%;
+    height: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-lines {
+    margin-bottom: 36px;
+    margin-top: 80px;
+    width: 100%;
+    height: 80px;
+  }
+}
+
  .section-title {
     font-family: Merriweather;
     font-style: normal;
@@ -484,6 +577,24 @@ button {
     height: 520px;
     margin-bottom: 13px;
     justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills-box {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .skills-box {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -567,6 +678,23 @@ button {
   }
 }
 
+@media (max-width: 767px) {
+  .portfolio-button-line {
+    margin-top: 14px;
+    margin-bottom: 55px;
+    width: 100%;
+  
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio-button-line {
+    margin-top: 14px;
+    margin-bottom: 55px;
+    width: 100%;
+  
+  }
+}
 
 .portfolio-button{
     position: relative;
@@ -659,7 +787,19 @@ button {
 }
 
 .portfolio-img {
-  height: 560px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .portfolio-img {
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio-img {
+    height: auto;
+  }
 }
 
 
@@ -669,14 +809,25 @@ button {
   justify-content: center;
   align-items: center;
   z-index: 3;
+  background-image: url(./assets/img/video-player.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: -webkit-fill-available;
+  height: 705px;
+  
 }
 
 @media (max-width: 768px) {
   .video-player {
     margin-top: 14px;
+    height: 418px;
+    background-image: url(./assets/img/video-player-768.jpg);
+    width: 100%;
     
   }
 }
+
+
 
 .video-button {
   position: absolute;
@@ -686,6 +837,19 @@ button {
   height: 130px;
   cursor: pointer;
   border: none;
+  background-image: url(./assets/svg/Play_hover.svg);
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 768px) {
+  .video-button {
+    background-image: url(./assets/svg/play-btn-768.svg);
+    background-repeat: no-repeat;
+    margin-left: 54px;
+    margin-bottom: -54px;
+  
+  }
 }
 
 .video-button:hover {
@@ -700,8 +864,11 @@ button {
   justify-content: space-between;
   align-items:center;
   align-content: center;
-  width: 1400px;
+  width: 100%;
   margin-bottom: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+
 }
 
 @media (max-width: 768px) {
@@ -709,6 +876,18 @@ button {
     margin-top: 14px;
     flex-direction: column;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .price-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .price-box {
+    width: 100%;
   }
 }
 
@@ -726,6 +905,20 @@ button {
 @media (max-width: 768px) {
   .price-item {
     width: 420px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .price-item {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .price-item {
+    width: 90%;
     margin-bottom: 50px;
   }
 }
@@ -800,9 +993,42 @@ button {
     justify-content: center;
     align-items: center;
     z-index: 5;
+    
     background-size: auto 700px;
     background-position: center center;
     
+  }
+
+  .section-contacts {
+    display: flex;
+    align-items: flex-end;
+    
+    height: 700px;
+    width: 100%;
+    background-image: url(./assets/img/contacts.jpg);
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 768px) {
+    .section-contacts {
+      background-image: url(./assets/img/contacts-768.jpg);
+      height: 600px;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .contacts {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .contacts {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   
   .contacts-form {
@@ -813,7 +1039,7 @@ button {
     right: 20px;
     align-content: space-between;
     justify-content: space-between;
-    z-index: 6;
+    z-index: 7;
     background-color: transparent;
     border: none;
     width: 450px;
@@ -823,10 +1049,37 @@ button {
 
   @media (max-width: 768px) {
     .contacts-form {
-      right: 159px;
+      
       justify-content: center;
       height: 429px;
       flex-direction: row;
+      position: relative;
+      right: 0px;
+}
+    }
+  
+
+  @media (max-width: 767px) {
+    .contacts-form {
+      position: relative;
+      
+      right: auto;
+      justify-content: center;
+      height: auto;
+      flex-direction: row;
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .contacts-form {
+      position: relative;
+      
+      right: auto;
+      justify-content: center;
+      height: auto;
+      flex-direction: row;
+      width: 90%;
     }
   }
 
