@@ -482,6 +482,8 @@ button {
     position: relative;
     width: 728px;
     height: 520px;
+    margin-bottom: 13px;
+    justify-content: space-evenly;
   }
 }
 
@@ -556,6 +558,15 @@ button {
  justify-content: center;
   }
 
+@media (max-width: 768px) {
+  .portfolio-button-line {
+    margin-top: 14px;
+    margin-bottom: 55px;
+    width: 455px;
+  
+  }
+}
+
 
 .portfolio-button{
     position: relative;
@@ -570,6 +581,12 @@ button {
     margin-bottom: 60px;
     margin-left: 3px;
     margin-right: 3px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-button {
+    margin-bottom: 5px;
+  }
 }
 
 .portfolio-button:active {
@@ -589,6 +606,12 @@ button {
     margin-left: 3px;
     margin-right: 3px;
     background-color: #BDAE82;
+}
+
+@media (max-width: 768px) {
+  .portfolio-button-gold {
+    margin-bottom: 5px;
+  }
 }
 
 .portfolio-button-text {
@@ -629,6 +652,12 @@ button {
     grid-gap: 25px;
 }
 
+@media (max-width: 768px) {
+  .portfolio-photos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .portfolio-img {
   height: 560px;
 }
@@ -640,6 +669,13 @@ button {
   justify-content: center;
   align-items: center;
   z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .video-player {
+    margin-top: 14px;
+    
+  }
 }
 
 .video-button {
@@ -668,6 +704,14 @@ button {
   margin-bottom: 100px;
 }
 
+@media (max-width: 768px) {
+  .price-box {
+    margin-top: 14px;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+
 .price-item {
   display: flex;
   flex-direction: column;
@@ -677,8 +721,15 @@ button {
   width: 450px;
   height: 505px;
   border: 3px solid #BDAE82;
-  
 }
+
+@media (max-width: 768px) {
+  .price-item {
+    width: 420px;
+    margin-bottom: 50px;
+  }
+}
+
 
 .price-name {
   font-family: Merriweather;
@@ -770,6 +821,15 @@ button {
     margin-bottom: 135px;
   }
 
+  @media (max-width: 768px) {
+    .contacts-form {
+      right: 159px;
+      justify-content: center;
+      height: 429px;
+      flex-direction: row;
+    }
+  }
+
   .section-title-contacts {
     font-family: Merriweather;
     font-style: normal;
@@ -778,8 +838,16 @@ button {
     line-height: 80px;
     text-align: left;
     color: #BDAE82;
-    margin-bottom: 40px;
-       
+    margin-bottom: 40px; 
+  }
+
+  @media (max-width: 768px) {
+    .section-title-contacts {
+      font-size: 32px;
+      line-height: 64px;
+      text-align: center;
+      margin-top: 40px;
+    }
   }
 
   
@@ -819,6 +887,12 @@ button {
     height: 100px;
     padding-left: 18px;
     padding-top: 3px;
+  }
+
+  @media (max-width: 768px) {
+    .contacts-input-message {
+      width: 100%;
+    }
   }
 
   .contacts-input-message::placeholder {
@@ -879,6 +953,16 @@ button {
   margin: auto 20px;
 }
 
+@media (max-width: 768px) {
+  .container-footer {
+    flex-direction: column;
+    height: 190px;
+    justify-content: none;
+    margin: 0px;
+
+  }
+}
+
 .footer-items-general {
   display: flex;
   flex-wrap: wrap;
@@ -886,10 +970,26 @@ button {
   justify-content: left;
 }
 
+@media (max-width: 768px) {
+  .footer-items-general {
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    margin-top: 29px;
+  }
+}
+
 .footer-c {
   width: 19px;
   height: 50px;
   margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-c {
+    width: 15px;
+    margin-right: 24px;
+  }
 }
 
 .footer-text {
@@ -901,6 +1001,8 @@ button {
   color: #FFFFFF;
   margin-right: 20px;
 }
+
+
 
 .footer-link {
   text-decoration: none;
@@ -949,6 +1051,14 @@ ul.footer-list {
   margin-left: 40px;
 }
 
+@media (max-width: 768px) {
+  .footer-items-name {
+    justify-content: center;
+    margin-left: 0px;
+    align-content: center;
+  }
+}
+
 
 .footer-items-media {
   display: flex;
@@ -958,11 +1068,22 @@ ul.footer-list {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .footer-items-media {
+    justify-content: center;
+    align-content: center;
+    margin-left: -20px;
+    height: 50px;
+    margin-bottom: 28px;
+  }
+}
+
 .footer-media {
   width: 32px;
   height: 32px;
   margin-left: 20px;
 }
+
 
 .footer-media:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
