@@ -1,8 +1,14 @@
-console.log("1. Valid validator.W3 10/10\n",
+console.log("Portfolio 1\n",
+"1. Valid validator.W3 10/10\n",
 "2. Semantic 20/20\n",
 "3. Layout 45/45\n",
 "4. CSS Requirements 12/12\n",
-"5. CSS Interactivity 20/20");
+"5. CSS Interactivity 20/20"),
+"\n"
+"Portfolio 2\n",
+"1. Layout 48/48\n",
+"2. Till 3320px 15/15\n",
+"3. Adaptive menu 22/22\n";
 
 const burger = document.querySelector('.nav-burger');
 const burgerUl = document.querySelector('ul');
