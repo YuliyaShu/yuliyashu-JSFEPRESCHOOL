@@ -144,7 +144,6 @@ button {
     max-width: 1440px;
     margin: 0 auto;
     justify-content: center;
-    background-color: black;
   }
 
   body {
@@ -154,7 +153,15 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: black;
+    background-size: 100%;
 }
+
+li {
+  list-style: none;
+}
+
+
 
   /*header start*/
  
@@ -172,12 +179,16 @@ button {
     margin-left: auto ;
     z-index: 2;
     opacity:inherit;
-    height: 90px;
+    height: 1024px;
     background-color: transparent;
 
 
   }
 
+ 
+
+
+  
   .header-logo {
       width: 50px;
       height: 50px;
@@ -218,6 +229,15 @@ button {
     align-self: flex-end;
     flex-grow: 1;
   }
+
+  @media (max-width: 768px) {
+    .nav-container {
+      display: none;
+    }
+  }
+
+
+
 
   .nav {
       margin: 0px;
@@ -276,6 +296,14 @@ button {
     height: 50px;
     margin: 20px 20px 20px 0px;
   }
+
+  @media (max-width: 768px) {
+    .header-language {
+      margin-right: 20px;
+      margin-left: auto;
+      width: auto;
+    }
+  }
   
   .language-item {
     display: flex;
@@ -293,6 +321,8 @@ button {
     color: #BDAE82;
   }
 
+  
+
   .language-white {  
     text-align: right;
     font-family: Inter;
@@ -301,8 +331,197 @@ button {
     font-size: 20px;
     line-height: 50px;
     color: white;
+    text-decoration: none;
   }
 
+  .language-white-ru:hover, .language-white-ru:focus, .language-white-ru:active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .language-white-768 {
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    
+    
+    .nav-burger {
+      display: block;
+      margin-top: 20px;
+      margin-right: 64px;
+      z-index: 15;
+     
+    }
+
+    .nav-burger:hover {
+      cursor: pointer;
+    }
+
+    .line-burger {
+      display: block;
+      z-index: 10;
+    }
+
+
+    .hr-burger {
+      width: 50px;
+      height: 3px;
+      background-color: #FFFFFF;
+      display: block;
+      margin: 10px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      unicode-bidi: isolate;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+      overflow: visible;
+      border-style: solid;
+      border-width: 0px;
+    }
+    .nav-burger.open .line-burger-1 {
+      
+      transform: rotate(-45deg) translate(-10px, 9px);
+      z-index: 11;
+     
+    }
+
+    .nav-burger.open .line-burger-2 {
+      opacity: 0;
+    }
+
+    .nav-burger.open .line-burger-3 {
+      transform: rotate(45deg) translate(-10px, -8px);
+      z-index: 11;
+    }
+
+    
+    .nav-burger-menu {
+      display: flex;
+      position: absolute;
+      top: 0px;
+      right: -620px;
+      transition: all 1s ease-in-out;
+      flex-direction: column;
+      width: 620px;
+      height: 1024px;
+      background-color: black;
+      z-index: 12;
+
+      
+    }
+
+    .nav-burger-menu.open {
+      z-index: 13;
+      right: 0px;
+      
+    }
+
+    
+
+    .nav-burger-menu.container.open {
+      display: flex;
+       
+    }
+
+    ul {
+      display: none;
+       
+    
+    }
+
+    ul.open {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 0px;
+       
+    }
+
+    .nav-burger-menu-list.open {
+      margin-top: 134px;
+      margin-left: 127px;
+      z-index: 9;
+       
+    }
+
+    .nav-burger-menu-item.open {
+      margin-bottom: 16px;
+    }
+
+    .nav-burger-menu-link-1.open, 
+    .nav-burger-menu-link-2.open, 
+    .nav-burger-menu-link-3.open, 
+    .nav-burger-menu-link-4.open, 
+    .nav-burger-menu-link-5.open {
+
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 73px;
+      color: #FFFFFF;
+      text-decoration: none;
+      
+    }
+
+    .nav-burger-menu-link-1.open:hover, .nav-burger-menu-link-1.open:focus, .nav-burger-menu-link-1.open:active,
+    .nav-burger-menu-link-2.open:hover, .nav-burger-menu-link-2.open:focus, .nav-burger-menu-link-2.open:active,
+    .nav-burger-menu-link-3.open:hover, .nav-burger-menu-link-3.open:focus, .nav-burger-menu-link-3.open:active,
+    .nav-burger-menu-link-4.open:hover, .nav-burger-menu-link-4.open:focus, .nav-burger-menu-link-4.open:active,
+    .nav-burger-menu-link-5.open:hover, .nav-burger-menu-link-5.open:focus, .nav-burger-menu-link-5.open:active {
+      filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    }
+    
+    
+  }
+
+  @media (max-width: 679px) {
+  .nav-burger-menu.open {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    flex-direction: column;
+    width: 100%;
+    height: 1024px;
+    background-color: black;
+    transition-duration: 1s; 
+    
+  }
+}
+
+  @media (min-width: 769px) {
+    .nav-burger, .nav-burger-menu {
+      display: none;
+    }
+  }
+
+  @media (max-width: 340px) {
+  .nav-burger {
+    margin-right: 50px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .header-container {
+    overflow-x: hidden;
+    
+  }
+
+}
 
   /*header end*/
 
@@ -317,11 +536,12 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   height: 910px;
-  margin-top: -90px;
+  margin-top: -1024px;
   z-index: 1;
   left: 0px;
   top: 0px;
   }
+
   
   @media (max-width: 768px) {
   .hero-container {
@@ -577,6 +797,7 @@ button {
     height: 520px;
     margin-bottom: 13px;
     justify-content: space-evenly;
+    margin-left: -4px;
   }
 }
 
@@ -1252,7 +1473,7 @@ button {
   font-size: 20px;
   line-height: 50px;
   color: #FFFFFF;
-  margin-right: 20px;
+  margin-right: 23px;
 }
 
 
@@ -1278,7 +1499,7 @@ button {
   font-size: 20px;
   line-height: 50px;
   color: #FFFFFF;
-  text-decoration-line: underline;
+  text-decoration: none;
 }
 
 .footer-link-name:hover {
