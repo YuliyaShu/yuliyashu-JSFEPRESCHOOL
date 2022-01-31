@@ -1,56 +1,51 @@
 /* merriweather-regular - latin */
-@font-face {
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./assets/fonts/merriweather-v28-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('./assets/fonts/merriweather-v28-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./assets/fonts/merriweather-v28-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./assets/fonts/merriweather-v28-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('./assets/fonts/merriweather-v28-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./assets/fonts/merriweather-v28-latin-regular.svg#Merriweather') format('svg'); /* Legacy iOS */
-  }
-  /* merriweather-700 - latin */
-  @font-face {
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 700;
-    src: url('./assets/fonts/merriweather-v28-latin-700.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('./assets/fonts/merriweather-v28-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./assets/fonts/merriweather-v28-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./assets/fonts/merriweather-v28-latin-700.woff') format('woff'), /* Modern Browsers */
-         url('./assets/fonts/merriweather-v28-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./assets/fonts/merriweather-v28-latin-700.svg#Merriweather') format('svg'); /* Legacy iOS */
-  }
+/* Regular */
 
-  /* inter-regular - latin */
 @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./assets/fonts/inter-v7-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('./assets/fonts/inter-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./assets/fonts/inter-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./assets/fonts/inter-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('./assets/fonts/inter-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./assets/fonts/inter-v7-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
-  }
-  /* inter-700 - latin */
+  font-family: 'Merriweather';
+  src: local('Merriweather'),
+       url('./assets/fonts/Merriweather-Regular.ttf') format('truetype'),
+       url('./assets/fonts/Merriweather-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/Merriweather-Regular.woff') format('woff'); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather'),
+       url('./assets/fonts/Merriweather-Bold.ttf') format('truetype'),
+       url('./assets/fonts/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/Merriweather-Bold.woff') format('woff'); 
+  font-weight: 700;
+  font-style: normal;
+}
+
+
   @font-face {
     font-family: 'Inter';
+    src: local('Inter'),
+         url('./assets/fonts/Inter-Regular.ttf') format('truetype'),
+         url('./assets/fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/Inter-Regular.woff') format('woff'); 
+    font-weight: 400;
     font-style: normal;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+         url('./assets/fonts/Inter-Bold.ttf') format('truetype'),
+         url('./assets/fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/Inter-Bold.woff') format('woff'); 
     font-weight: 700;
-    src: url('./assets/fonts/inter-v7-latin-700.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('./assets/fonts/inter-v7-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./assets/fonts/inter-v7-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./assets/fonts/inter-v7-latin-700.woff') format('woff'), /* Modern Browsers */
-         url('./assets/fonts/inter-v7-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./assets/fonts/inter-v7-latin-700.svg#Inter') format('svg'); /* Legacy iOS */
-  }
+    font-style: normal;
+}
+
 
     
   @media (max-width: 768px) {
@@ -185,10 +180,14 @@ li {
     margin-left: auto ;
     z-index: 2;
     opacity:inherit;
-    height: 1024px;
+    height: 90px;
     background-color: transparent;
 
 
+  }
+
+  .header-container-1024 {
+    height: 1024px;
   }
 
  
@@ -280,7 +279,6 @@ li {
     left: 6%;
     right: 84.2%;
     top: 0px;
-    
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -292,15 +290,32 @@ li {
     
   }
 
+  .nav-link-light {
+    height: 50px;
+    left: 6%;
+    right: 84.2%;
+    top: 0px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: black;
+    text-decoration: none;
+    margin: 20px 0px 20px 30px;
+    
+  }
+
   .nav-link:hover, .nav-link:focus, .nav-link:active {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
+    
   }
 
   .header-language {
     width: 70px;
     height: 50px;
-    margin: 20px 20px 20px 0px;
+    margin: 20px 35px 20px 0px;
   }
 
   @media (max-width: 768px) {
@@ -317,16 +332,7 @@ li {
     justify-content: space-between;
   }
 
-  .language-beige {  
-    text-align: right;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 50px;
-    color: #BDAE82;
-  }
-
+  
   
 
   .language-white {  
@@ -340,12 +346,26 @@ li {
     text-decoration: none;
   }
 
-  .language-white-ru:hover, .language-white-ru:focus, .language-white-ru:active {
+  .language-white:hover, .language-white:focus, .language-white:active {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
+    cursor: pointer;
   }
 
-  
+  .language-beige {  
+    text-align: right;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    color: #BDAE82;
+  }
+
+  .language-beige:hover, .language-beige:focus, .language-beige:active {
+    color: #FFFFFF;
+    cursor: pointer;
+  }
 
   @media (max-width: 768px) {
     .language-white-768 {
@@ -353,10 +373,11 @@ li {
       margin-left: 10px;
     }
   }
+  
 
   @media (max-width: 768px) {
 
-    
+  
     
     .nav-burger {
       display: block;
@@ -529,6 +550,11 @@ li {
 
 }
 
+.theme {
+  margin-right: 21px;
+  margin-top: 22px;
+}
+
   /*header end*/
 
 
@@ -542,10 +568,14 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   height: 910px;
-  margin-top: -1024px;
+  margin-top: -90px;
   z-index: 1;
   left: 0px;
   top: 0px;
+  }
+
+  .hero-container-1024 {
+    margin-top: -1024px;
   }
 
   
@@ -610,7 +640,7 @@ li {
       left: 60px;
       
       margin-bottom: 20px;
-      width: 165px;
+      width: auto;
       height: 64px;
     }
   }
@@ -944,9 +974,21 @@ li {
   }
 }
 
-.portfolio-button:active {
-    background: #BDAE82;
+.portfolio-button-winter:active, 
+.portfolio-button-spring:active, 
+.portfolio-button-summer:active, 
+.portfolio-button-autumn:active {
+    color: #000;
+    background-color: #bdae82;
+  }
+
+.active {
+ 
+  background-color: #bdae82;
+  color: #000;
 }
+
+
 
 .portfolio-button-gold {
   position: relative;
@@ -1573,4 +1615,107 @@ ul.footer-list {
   /*footer end*/
 
 
+  /*for light theme*/
+
+  .background-light {
+    background-color: white;
+  }
+
+  .background-gold {
+    background-color: #BDAE82;
+  }
+
+  .nav-link-light:hover {
+    color: white;
+  }
+
+  .hero-container-light {
+    background-image: url('./assets/img/bg-light.jpg');
+  }
+
+  .section-contacts-light {
+    background-image: url('./assets/img/contacts-light.jpg');
+  }
+
+  .section-lines-light {
+    background-image: linear-gradient(to top, white 39px, black 39px, black 41px, white 41px);
+  }
+
+  .contacts-input-light {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .text-color-black, .contacts-input-light::placeholder {
+    color: #000;
+  }
+
+  
+
+  .text-color-white, .language-white-light:hover, .language-white-light:focus, .language-white-light:active {
+    color: white;
+    filter: none;
+
+  }
+  
+  .text-color-white-only {
+    color: white;
+  }
+  
+
+  .logo-img-light-2 {
+    content: url('./assets/svg/logo-light.svg');
+  }
+
+  .footer-c-light {
+    content: url('./assets/svg/©-black.svg');
+  }
+
+  .instagram-light {
+    content: url('./assets/svg/inst-black.svg');
+  }
+
+  .facebook-light {
+    content: url('./assets/svg/fb-black.svg');
+  }
+
+  .twitter-light {
+    content: url('./assets/svg/tw-black.svg');
+  }
+
+  .pinterest-light {
+    content: url('./assets/svg/pinterest-black.svg');
+  }
+
+  .active-season-button-light {
+    background-color: black;
+    color: #BDAE82;
+  }
+
+  .moon-button {
+    content: url('./assets/svg/moon.svg');
+  }
+
+  .hr-burger-light {
+    background-color: black;
+  }
+
+  .moon-sun-button {
+    cursor: pointer;
+    color: white;
+  }
+
+  .moon-sun-button:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+
+  .black-gold-button-light:hover {
+    color: #BDAE82;
+    background-color: black;
+  }
+
+  .background-black-light:hover {
+    background-color: black;
+    color: #BDAE82;
+  }
 
