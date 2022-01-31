@@ -351,12 +351,6 @@ function preloadImages() {
   moonSunButton.addEventListener('click', getLightTheme);
 
   
-  function getDarkTheme() {
-    if (document.querySelector('.background-light')) {
-        getLightTheme();
-       
-    };
-  }
   
 
   function setLocalStorage() {

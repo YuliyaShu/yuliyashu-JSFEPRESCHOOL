@@ -692,6 +692,7 @@ li {
   
 
   .hero-button {
+    display: none;
     position: relative;
     width: 220px;
     height: 55px;
@@ -1719,3 +1720,57 @@ ul.footer-list {
     color: #BDAE82;
   }
 
+
+  /* crazy button*/
+
+
+.figure-button-crazy {
+  width:200px;
+  height:60px;
+  cursor:pointer;
+  perspective:500px;
+  -webkit-perspective:500px;
+}
+
+.figure-button-crazy-div {
+  height:100%;
+  transform-style:preserve-3d;
+  -webkit-transform-style:preserve-3d;
+  transition:0.25s;
+  -webkit-transition:0.25s;
+}
+
+.figure-button-crazy-div:hover {
+  transform:rotateX(-90deg);
+}
+
+.figure-button-crazy-text1, .figure-button-crazy-text2 {
+  width:100%;
+  height:100%;
+  position:absolute;
+  box-sizing:border-box;
+  background-color:  #BDAE82;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 55px;
+  text-align: center;
+  border: 1px solid black;
+ 
+  
+}
+
+.figure-button-crazy-text1 {
+  
+  color:black;
+  transform: translate3d(0, 0, 30px);
+  -webkit-transform: translate3d(0, 0, 30px);
+}
+
+.figure-button-crazy-text2 {
+  color:  #BDAE82;
+  background: black;
+  transform: rotateX(90deg) translate3d(0, 0, 30px);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
+}
