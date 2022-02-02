@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.header,  .footer {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: black;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.pictures {
+    flex-grow: 1;
+    
+    background-image: url(./assets/img/forest.jpg);
+    width: 100%;
+    height: 500px;
+}
