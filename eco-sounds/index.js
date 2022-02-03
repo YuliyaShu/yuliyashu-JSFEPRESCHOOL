@@ -170,7 +170,6 @@ function preloadImages() {
         for(let i = 1; i <= 2; i++) {
             const img = new Image();
             img.src = `./assets/img/${picture}${i}.png`;
-            console.log(img.src);
             img.src = `./assets/img/${picture}.jpg`
         }
     }) 
