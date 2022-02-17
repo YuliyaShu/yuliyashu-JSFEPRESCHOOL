@@ -265,4 +265,46 @@ transition: 0.5s;
    transition: 0.5s;
 }
 
+@media (max-width: 703px) {
+    .header-text, .rules-text, .name-text, .clear-text,
+    .last-games-text, th, td, .winner-text, .new-game-text,
+    .logo-different {
+        font-size: 50%;
+    }
 
+    .header {
+        padding: 0 10%;
+        width: auto;  
+    }
+
+    .name {
+        margin: auto;
+        height: 4em;
+    }
+
+    .main, .footer {
+        justify-content: center;
+    }
+
+    .wrapper, .last-games, .results, .clear,
+    .winner, .new-game, .different, .logo-rss, .logo-different {
+        margin: auto;
+    }
+
+    .name-img {
+        width: 15%;
+    }
+
+    .wrapper {
+        width: 15em;
+        height: 15em;
+    }
+
+    .last-games {
+        height: 2em;
+    }
+
+    .left-side {
+        height: fit-content;
+    }
+}
