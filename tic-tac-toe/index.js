@@ -1,5 +1,10 @@
 console.log('Self check\n',
-'')
+'Score: 70/70\n',
+'Верстка +10\n',
+'Игра +20\n',
+'Результаты +20\n',
+'Звуки (при клике на Валли или Еву, при выигрыше) +10\n',
+'Доп функционал: необычная визуализация, эффекты при наведении, привила игры, очистка таблицы результатов +10')
 
 const boxes = document.getElementsByClassName('box');
 const wrapper = document.querySelector('.wrapper');
