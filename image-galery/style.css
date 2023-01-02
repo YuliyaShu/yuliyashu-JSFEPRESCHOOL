@@ -1,0 +1,225 @@
+/* Regular */
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+         url('./assets/fonts/Inter-Regular.ttf') format('truetype'),
+         url('./assets/fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/Inter-Regular.woff') format('woff'); 
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+         url('./assets/fonts/Inter-Bold.ttf') format('truetype'),
+         url('./assets/fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/Inter-Bold.woff') format('woff'); 
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.header, .footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    
+    /* background-color: aqua; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+.header {
+    
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+    padding: 0px 100px;
+}
+
+@media (max-width: 1111px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer {
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+.naming {
+    font-family: 'Inter';
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #1e5c0f;
+    font-weight: 700;
+    font-size: 200%;
+    padding-top: 10px;
+    text-shadow: 2px 2px 4px rgba(75, 75, 75, 0.50);
+}
+
+form {
+    font-family: 'Inter';
+    height: 50px;
+}
+
+input[type="search" i] {
+appearance: auto;
+box-sizing: border-box;
+padding: 1px 2px;
+box-shadow: 2px 2px 4px #4b4b4b;
+height: 35px;
+text-align: center;
+font-size: medium;
+
+}
+
+
+.search-corners {
+    border-radius: 10px;
+    border: 2px solid #1e5c0f;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+  }
+
+  .search-corners:hover, 
+  .search-corners:focus, 
+  .search-corners:active, 
+  .search-corners:target
+   {
+    border: 2px solid #1e5c0f;
+  }
+
+  .submit-corners {
+    border-radius: 10px;
+    background-color: #1e5c0f;
+    color: aliceblue;
+    box-shadow: 2px 2px 4px #4b4b4b;
+    border-color: #4b4b4b;
+    cursor: pointer;
+    height: 35px;
+  }
+
+  .submit-corners:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px rgb(50, 128, 15), 0 0 5px rgb(7, 49, 7);
+  }
+
+  :focus-visible {
+    outline: none;
+    
+    
+}
+
+
+.different {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-left: 100px;
+}
+
+
+.different-text {
+    color: #1e5c0f;
+    margin-right: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+.github:hover {
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(50, 128, 15), 0 0 5px rgb(7, 49, 7);
+  
+transition: 0.5s;
+}
+
+
+.github {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo-rss {
+    height: 45px;
+    width: 100px;
+    margin-right: 100px;
+    cursor: pointer;    
+    
+}
+
+.logo-rss:hover {
+   width: 150px;
+   transition: 0.5s;
+}
+
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 0px 100px;
+    height: auto;
+    
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        
+        grid-template-columns: repeat(1, 1fr);
+       
+}
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   
+} 
+    
+img{
+    max-width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 5px rgba(75, 75, 75, 0.50);
+    border-radius: 10px;
+}
+
+.img-link:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px rgb(50, 128, 15), 0 0 5px rgb(7, 49, 7);
+    border-radius: 10px;
+}
+
